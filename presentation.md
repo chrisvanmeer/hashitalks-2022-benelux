@@ -4,14 +4,20 @@
 
 -> # HashiTalks 2022 Benelux <-
 
-How to deploy your HashiCorp stack with Ansible under 15 minutes
 
-*_Agenda_*
+
+
+
+-> Welcome <-
+
+-------------------------------------------------
+
+-> # Agenda <-
 
 * Introduction
-    * `whoami`
-    * Why
-    * How
+    * `whoami`?
+    * Why?
+    * How?
 
 * Setup
     * Goal
@@ -30,19 +36,19 @@ How to deploy your HashiCorp stack with Ansible under 15 minutes
 
 -------------------------------------------------
 
--> *_Introduction_* <-
+-> # Introduction <-
 
-chris@atcomputing ~ $ *whoami*
+chris@atcomputing ~ $ `whoami`
 
-*Chris van Meer*
+## Chris van Meer
 Open Source Consultant at AT Computing
 
-*Strong focus on*
+## Strong focus on
 Networking, Ansible, HashiCorp portfolio
 
 -------------------------------------------------
 
--> *_Why_* <-
+-> # Why? <-
 
 * Most demos use dev mode
 * TLS is always disabled
@@ -53,7 +59,7 @@ Networking, Ansible, HashiCorp portfolio
 
 -------------------------------------------------
 
--> *_How_* <-
+-> # How? <-
 
 ```
                                .,,,,,,.                          
@@ -82,7 +88,7 @@ Networking, Ansible, HashiCorp portfolio
 
 -------------------------------------------------
 
--> *_Setup_ - Goal* <-
+-> # Setup / Goal <-
 
 * Create a high available stateless web app
 * Load balanced
@@ -91,7 +97,7 @@ Networking, Ansible, HashiCorp portfolio
 
 -------------------------------------------------
 
--> *_Setup_ - Infrastructure* <-
+-> # Setup / Infrastructure <-
 
 ```
        +---server1---+     +---server2---+     +---server3---+         
@@ -115,7 +121,7 @@ Networking, Ansible, HashiCorp portfolio
 
 -------------------------------------------------
 
--> *_Setup_ - General Deployment* <-
+-> # Setup / General Deployment <-
 
 * Multipass / Terraform
     * Deploys instances
@@ -136,7 +142,7 @@ Playbook run took 0 days, 0 hours, 5 minutes, 7 seconds
 
 -------------------------------------------------
 
--> *_Setup_ - PKI* <-
+-> # Setup / PKI <-
 
 * Creates a self-signed Certificate Authority
 * Distributes the CA certificate to servers and clients
@@ -147,7 +153,7 @@ Playbook run took 0 days, 0 hours, 0 minutes, 27 seconds
 
 -------------------------------------------------
 
--> *_Setup_ - Consul* <-
+-> # Setup / Consul <-
 
 * Creates self Consul CA, server and client certificates
 * Creates an encryption key
@@ -159,7 +165,7 @@ Playbook run took 0 days, 0 hours, 1 minutes, 2 seconds
 
 -------------------------------------------------
 
--> *_Setup_ - Vault* <-
+-> # Setup / Vault <-
 
 * Creates a TLS certificate for the Vault nodes
   * Signed by our private CA
@@ -178,7 +184,7 @@ Playbook run took 0 days, 0 hours, 0 minutes, 36 seconds
 
 -------------------------------------------------
 
--> *_Setup_ - Nomad* <-
+-> # Setup / Nomad <-
 
 * Creates a Nomad policy in Consul
 * Creates Consul ACL tokens for Nomad servers and clients
@@ -189,7 +195,7 @@ Playbook run took 0 days, 0 hours, 0 minutes, 52 seconds
 
 -------------------------------------------------
 
--> *_Setup_ - Nomad / Vault integration && Nomad demo jobs* <-
+-> # Setup / Nomad + Vault integration && Nomad demo jobs <-
 
 * Nomad / Vault integration
   * Creates a Vault policy for the demo apps
@@ -206,14 +212,14 @@ Playbook run took 0 days, 0 hours, 0 minutes, 6 seconds
 
 -------------------------------------------------
 
--> *_Setup_ - Demo - Traefik* <-
+-> # Setup / Demo / Traefik <-
 
 * Traefik is registered within Consul
 * Retrieves TLS certificates from Vault
 
 -------------------------------------------------
 
--> *_Setup_ - Demo - Web App* <-
+-> # Setup / Demo / Web App <-
 
 * Pulls a container image
 * Registers itself within Consul
@@ -221,14 +227,20 @@ Playbook run took 0 days, 0 hours, 0 minutes, 6 seconds
 
 -------------------------------------------------
 
--> *_Resources_* <-
-
--> [Presentation](https://github.com/chrisvanmeer/hashitalks-2022-benelux)
--> [GitHub Repository](https://github.com/chrisvanmeer/at-hashi-demo) <-
+-> # cd && init 0 <-
 
 -------------------------------------------------
 
--> *_Contact_* <-
+-> # Resources <-
+
+
+
+-> [Repo](https://github.com/chrisvanmeer/at-hashi-demo) <-
+-> [Presentation](https://github.com/chrisvanmeer/hashitalks-2022-benelux)
+
+-------------------------------------------------
+
+-> # Contact <-
 
 Email          [c.v.meer@atcomputing.nl](mailto:c.v.meer@atcomputing.nl)
 Website        [chrisvanmeer.nl](https://chrisvanmeer.nl)
@@ -239,3 +251,4 @@ Reddit         [u/chrisvanmeer](https://www.reddit.com/user/chrisvanmeer)
                [r/consul](https://www.reddit.com/r/consul)
 Discord        [The DevOps Lounge](https://discord.gg/devopslounge)
 Meetup         [Amsterdam HashiCorp User Group](https://www.meetup.com/amsterdam-hashicorp-user-group)
+
