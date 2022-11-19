@@ -9,13 +9,13 @@ date: 2022-12-01
 ## Welcome
 
 ---
-
 # Agenda
 
 * Introduction
     * `whoami`?
     * Why?
     * How?
+
 * Setup
     * Goal
     * Infrastructure
@@ -26,12 +26,10 @@ date: 2022-12-01
     * Nomad
     * Nomad / Vault integration && Nomad demo jobs
     * Demo
-        * Traefik
-        * Web app
+      * Traefik
+      * Web app
 * Contact
-
 ---
-
 # Introduction
 
 chris@atcomputing ~ $ `whoami`
@@ -41,9 +39,7 @@ Open Source Consultant at AT Computing
 
 ## Strong focus on
 Networking, Ansible, HashiCorp portfolio
-
 ---
-
 # Why?
 
 * Most demos use dev mode
@@ -52,9 +48,7 @@ Networking, Ansible, HashiCorp portfolio
 * Useable as quick test or demo environment
 * Most demos use Terraform as default
 * Needed something modular
-
 ---
-
 # How?
 
 ```
@@ -81,18 +75,14 @@ Networking, Ansible, HashiCorp portfolio
                     ,@@@@@@@@@@@@@@@@@@@@@@@@@@@@%               
                          *#@@@@@@@@@@@@@@@@@(.                   
 ```
-
 ---
-
 # Setup / Goal
 
 * Create a high available stateless web app
 * Load balanced
 * Running TLS
 * Integrate Consul, Vault and Nomad with each other
-
 ---
-
 # Setup / Infrastructure
 
 ```
@@ -114,9 +104,7 @@ Networking, Ansible, HashiCorp portfolio
 |             |   |             |   |             |   |             |
 +-------------+   +-------------+   +-------------+   +-------------+
 ```
-
 ---
-
 # Setup / General Deployment
 
 * Multipass / Terraform
@@ -135,7 +123,6 @@ Playbook run took 0 days, 0 hours, 2 minutes, 38 seconds
       * atop, jq, lynx, tree, etc
 
 Playbook run took 0 days, 0 hours, 5 minutes, 7 seconds
-
 ---
 
 # Setup / PKI

@@ -19,23 +19,22 @@
     "bold": true
   },
   "h1": {
-    "prefix": " ",
+    "prefix": "██ ",
     "suffix": " ",
-    "color": "228",
-    "background_color": "63",
+    "color": "#3399cc",
     "bold": true
   },
   "h2": {
-    "prefix": "## "
+    "prefix": "▓▓▓ ",
+    "color": "#1cc"
   },
   "h3": {
-    "prefix": "### "
+    "prefix": "▒▒▒▒ ",
+    "color": "#29c"
   },
   "h4": {
-    "prefix": "#### "
-  },
-  "h5": {
-    "prefix": "##### "
+    "color": "#559",
+    "prefix": "░░░░░ "
   },
   "h6": {
     "prefix": "###### ",
