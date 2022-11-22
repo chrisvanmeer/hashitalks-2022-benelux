@@ -128,6 +128,7 @@ Playbook run took 0 days, 0 hours, 2 minutes, 38 seconds
     * hashicorp repository
     * docker (clients)
     * dnsmasq
+    * pip + some packages
     * tools that should be standard
       * atop, jq, lynx, tree, etc
 
