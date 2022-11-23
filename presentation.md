@@ -87,6 +87,7 @@ Networking, Ansible, HashiCorp portfolio
 * Load balanced
 * Running TLS
 * Integrate Consul, Vault and Nomad with each other
+* Do it [on a local machine](For those who can't I've included a Terraform workflow for AWS as well)
 
 -------------------------------------------------
 
