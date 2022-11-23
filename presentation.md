@@ -149,7 +149,7 @@ Playbook run took 0 days, 0 hours, 0 minutes, 27 seconds
 
 -> # Setup / Consul <-
 
-* Creates self Consul CA, server and client certificates
+* Creates a Consul CA, server and client certificates
 * Creates an encryption key
 * Consul is bootstrapped - token is saved on workstation
 * Several Consul policies are created
