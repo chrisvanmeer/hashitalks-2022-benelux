@@ -40,7 +40,7 @@
 chris@atcomputing ~ $ `whoami`
 
 ## Chris van Meer
-Open Source Consultant at AT Computing
+Consultant at AT Computing
 
 ## Strong focus on
 Networking, Ansible, HashiCorp portfolio
